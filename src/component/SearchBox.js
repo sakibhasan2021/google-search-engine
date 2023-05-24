@@ -22,7 +22,6 @@ const SearchBox = () => {
       className="flex border border-gray-300 rounded-full shadow-md px-4 py-3 ml-10 mr-5 items-center flex-grow"
     >
       <input
-        value={term}
         onChange={(e) => setTerm(e.target.value)}
         value={term}
         type="text"
@@ -38,7 +37,9 @@ const SearchBox = () => {
         className="text-2xl hidden sm:inline-flex cursor-pointer text-blue-500"
       />
     </form>
+  
   );
 };
 
 export default SearchBox;
+// //www.googleapis.com/customsearch/v1?key=INSERT_YOUR_API_KEY&cx=017576662512468239146:omuauf_lfve&q=lectures

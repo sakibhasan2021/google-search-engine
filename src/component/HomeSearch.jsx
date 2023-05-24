@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -53,7 +54,7 @@ export default function HomeSearch() {
           className="btn flex justify-center items-center disabled:opacity-95"
         >
           {randomSearchLoading ? (
-            <img
+            <Image
               src="random-search.svg"
               alt="spinner "
               className="h-6 text-center"
