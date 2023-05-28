@@ -1,5 +1,6 @@
 
 import SearchOption from "@/component/SearchOption";
+import SearchResult from "@/component/SearchResult";
 import Link from "next/link";
 import React from "react";
 
@@ -14,8 +15,8 @@ const page =async ({searchParams}) => {
  if(!results){
       return <div className="flex flex-col justify-center items-center pt-10">
       <h1 className="text-3xl mb-4">No results Found</h1>
-        <p className="text-lg">Search Something new or back to Home
-         <Link className="text-blue-500" href="">Home</Link>
+        <p className="text-lg">Search Something new or back to 
+         <Link className="text-blue-500" href=""> Home</Link>
          </p>
        
       </div>
@@ -24,7 +25,7 @@ const page =async ({searchParams}) => {
     
     <div>
       {
-        results && results.map((result,index) =><h1 key={index}>{result.title}</h1>)
+        results && <SearchResult data={data}/>
       }
     </div>
   );

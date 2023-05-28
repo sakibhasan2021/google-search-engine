@@ -36,6 +36,7 @@ const SearchBox = () => {
         onClick={handleSearch}
         className="text-2xl hidden sm:inline-flex cursor-pointer text-blue-500"
       />
+     
     </form>
   
   );
