@@ -10,7 +10,7 @@ export default function SearchResult({data}) {
             
             data.items?.map((result) =>(
                 <div className="mb-8 max-w-xl " key={result.link}>
-                <div className="group flex flex-cols">
+                <div className="group flex flex-col">
                     <Link className="text-sm truncate" href={result.link}>
                         {result.formattedUrl}
                     </Link>

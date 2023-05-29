@@ -1,4 +1,4 @@
-
+export const dynamic="force-dynamic"
 import SearchOption from "@/component/SearchOption";
 import SearchResult from "@/component/SearchResult";
 import Link from "next/link";
@@ -10,7 +10,7 @@ const page =async ({searchParams}) => {
     throw new Error('Something went wrong')
   }
   const data=await response.json()
- const results= data.items
+ const results= data.items;
 
  if(!results){
       return <div className="flex flex-col justify-center items-center pt-10">
